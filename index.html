@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Percoyo Form Input</title>
+  </head>
+  <body>
+    <h1 id="logo">
+      <a href="/"><img src="logo.png" alt="logo" /></a>
+    </h1>
+    <div class="container">
+      <h1>Please Login</h1>
+      <form>
+        <div id="a" class="form-control">
+          <input type="Name" required />
+          <label>Name</label>
+        </div>
+
+        <div class="form-control">
+          <input type="text" required />
+          <label>Email</label>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="text"
+            name="Number"
+            pattern="[1-9]{1}[0-9]{9}"
+            required
+          />
+          <label>Number</label>
+        </div>
+
+        <button class="btn" onclick="getdetails()">Login</button>
+
+        <p class="text">Don't have an account? <a href="#">Register</a></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
